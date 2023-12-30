@@ -1,5 +1,7 @@
 # expo-draggable-textfield
 
+![License](https://img.shields.io/github/license/onraj/expo-draggable-textfield) ![GitHub stars](https://img.shields.io/github/stars/onraj/expo-draggable-textfield?style=social) ![Types Included](https://img.shields.io/npm/types/expo-draggable-textfield)
+
 ## Introduction
 
 `expo-draggable-textfield` is a React Native component designed for the Expo framework. It provides a customizable, draggable text input field with a variety of features, making it a versatile choice for mobile applications requiring interactive text input.
