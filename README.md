@@ -10,6 +10,10 @@
 - Customizable styles and behaviors.
 - Integration with React Native's Animated and Gesture Handler libraries for smooth performance and responsive touch handling.
 
+## Example
+
+https://github.com/onraj/expo-draggable-textfield/assets/7750495/9649b1fc-4f31-4d08-b3a3-b3c714eb4285
+
 ## Installation
 
 To install `expo-draggable-textfield`, run the following command in your React Native project:
