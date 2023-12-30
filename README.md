@@ -12,7 +12,7 @@
 
 ## Example
 
-![Example gif](https://www.jarvel.com/images/example.gif)
+<img src="example.gif" alt="Example" width="200"/>
 
 ## Installation
 
