@@ -90,7 +90,7 @@ Contributions to `expo-draggable-textfield` are welcome.
 
 ## License
 
-`expo-draggable-textfield` is available under the [MIT License](LICENSE).
+`expo-draggable-textfield` is available under the [MIT License](LICENSE.md).
 
 ## Contact
 
