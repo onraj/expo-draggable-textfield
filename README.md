@@ -1,6 +1,6 @@
 # expo-draggable-textfield
 
-![License](https://img.shields.io/github/license/onraj/expo-draggable-textfield) ![GitHub stars](https://img.shields.io/github/stars/onraj/expo-draggable-textfield?style=social) ![Types Included](https://img.shields.io/npm/types/expo-draggable-textfield)
+![License](https://img.shields.io/github/license/onraj/expo-draggable-textfield) ![Types Included](https://img.shields.io/npm/types/expo-draggable-textfield) ![GitHub stars](https://img.shields.io/github/stars/onraj/expo-draggable-textfield?style=social)
 
 ## Introduction
 
