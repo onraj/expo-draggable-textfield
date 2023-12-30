@@ -10,7 +10,7 @@
 - Customizable styles and behaviors.
 - Integration with React Native's Animated and Gesture Handler libraries for smooth performance and responsive touch handling.
 
-## Example
+## Example video
 
 https://github.com/onraj/expo-draggable-textfield/assets/7750495/9649b1fc-4f31-4d08-b3a3-b3c714eb4285
 
@@ -27,6 +27,11 @@ Or, if you use Yarn:
 ```bash
 yarn add expo-draggable-textfield
 ```
+
+## Requirements
+
+- react-native-reanimated
+- react-native-gesture-handler
 
 ## Usage
 
@@ -79,7 +84,7 @@ You can customize the style and behavior of the draggable text field by passing 
 
 ## Contributing
 
-Contributions to `expo-draggable-textfield` are welcome. Please read our [contribution guidelines](#) before submitting a pull request.
+Contributions to `expo-draggable-textfield` are welcome.
 
 ## License
 
@@ -87,4 +92,4 @@ Contributions to `expo-draggable-textfield` are welcome. Please read our [contri
 
 ## Contact
 
-For support or queries, please reach out to us at [your-email@example.com](mailto:your-email@example.com).
+For support or queries, please open a issue or start a discussion.
