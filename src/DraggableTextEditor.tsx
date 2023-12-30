@@ -22,9 +22,9 @@ import Animated, {
   useSharedValue,
 } from "react-native-reanimated";
 
+import { AnimationProvider } from "./AnimationProvider";
 import CustomTextInput from "./CustomTextInput";
-import { RNDTExternalProvider } from "./External";
-import { RNDTInternalProvider } from "./Internal";
+import { TextInputProvider } from "./TextInputProvider";
 
 interface DragTextRef {
   setBorderStatus: (value: boolean) => void;
@@ -60,7 +60,7 @@ const DraggableTextEditor = forwardRef(
       onBlur,
       onItemActive,
     }: Props,
-    ref: Ref<DragTextRef>,
+    ref: Ref<DragTextRef>
   ) => {
     const x = useSharedValue<number>(30);
     const y = useSharedValue<number>(100);
@@ -113,7 +113,7 @@ const DraggableTextEditor = forwardRef(
       },
     });
 
-    const externalContextVariables = useMemo(
+    const textInputContext = useMemo(
       () => ({
         externalTextStyles,
         externalBorderStyles,
@@ -133,10 +133,10 @@ const DraggableTextEditor = forwardRef(
         blurOnSubmit,
         value,
         onBlur,
-      ],
+      ]
     );
 
-    const internalContextVariables = useMemo(
+    const animationContext = useMemo(
       () => ({
         x,
         y,
@@ -145,7 +145,7 @@ const DraggableTextEditor = forwardRef(
         textInputLayout,
         borderStatus,
       }),
-      [x, y, boxWidth, isResize, textInputLayout, borderStatus],
+      [x, y, boxWidth, isResize, textInputLayout, borderStatus]
     );
 
     const animatedDragStyles = useAnimatedStyle(
@@ -154,12 +154,12 @@ const DraggableTextEditor = forwardRef(
         width: boxWidth.value,
         display: visible ? "flex" : "none",
       }),
-      [x, y, boxWidth, visible],
+      [x, y, boxWidth, visible]
     );
 
     return (
-      <RNDTExternalProvider value={externalContextVariables}>
-        <RNDTInternalProvider value={internalContextVariables}>
+      <TextInputProvider value={textInputContext}>
+        <AnimationProvider value={animationContext}>
           <GestureHandlerRootView style={{ flex: 1 }}>
             <PanGestureHandler
               ref={panRef}
@@ -185,10 +185,10 @@ const DraggableTextEditor = forwardRef(
               </Animated.View>
             </PanGestureHandler>
           </GestureHandlerRootView>
-        </RNDTInternalProvider>
-      </RNDTExternalProvider>
+        </AnimationProvider>
+      </TextInputProvider>
     );
-  },
+  }
 );
 
 const styles = StyleSheet.create({

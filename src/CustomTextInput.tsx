@@ -2,7 +2,9 @@ import React, { FC, memo } from "react";
 import { StyleProp, StyleSheet, TextInput, TextStyle } from "react-native";
 import Animated from "react-native-reanimated";
 
-import { useRNDTExternal, useRNDTInternal } from "./Hooks";
+import { useAnimationContext } from "./AnimationProvider";
+import { useTextInput } from "./TextInputProvider";
+
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
 interface CustomTextInputProps {
@@ -23,8 +25,8 @@ const CustomTextInput: FC<CustomTextInputProps> = ({
     onBlur,
     blurOnSubmit,
     defaultTextValue,
-  } = useRNDTExternal();
-  const { isResize } = useRNDTInternal();
+  } = useTextInput();
+  const { isResize } = useAnimationContext();
 
   return (
     <>
