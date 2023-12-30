@@ -47,11 +47,20 @@ export default MyComponent;
 
 ## Props
 
-The following props are available for `DraggableTextEditor`:
+The `DraggableTextEditor` component accepts the following props:
 
-- `placeholder`: String, the placeholder text for the text input.
-- `onChangeText`: Function, callback for text change events.
-- (Include other props as necessary.)
+- `onChangeText`: Function called when the text changes.
+- `blurOnSubmit`: Boolean indicating if the keyboard should be dismissed on submit.
+- `value`: The text value of the input.
+- `onBlur`: Function called when the input loses focus.
+- `onItemActive`: Function called when the item becomes active.
+- `visible`: Boolean to control the visibility of the text editor.
+- `externalTextStyles`: Styles for the text or the view of the component.
+- `externalBorderStyles`: Styles for the border of the component.
+- `placeholder`: Placeholder text for the input.
+- `defaultTextValue`: Default value for the text input.
+
+These props enhance the flexibility and customization of the text editor component.
 
 ## Customization
 
@@ -61,7 +70,6 @@ You can customize the style and behavior of the draggable text field by passing 
 <DraggableTextEditor
   externalTextStyles={{ color: "blue" }}
   externalBorderStyles={{ borderColor: "green" }}
-  // Add other style props as needed
 />
 ```
 
