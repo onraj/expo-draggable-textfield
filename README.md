@@ -74,8 +74,6 @@ The `DraggableTextEditor` component accepts the following props:
 | `defaultTextValue`     | Default value for the text input.              |
 
 
-These props enhance the flexibility and customization of the text editor component.
-
 ## Customization
 
 You can customize the style and behavior of the draggable text field by passing style props. For example:
