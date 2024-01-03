@@ -60,16 +60,19 @@ export default MyComponent;
 
 The `DraggableTextEditor` component accepts the following props:
 
-- `onChangeText`: Function called when the text changes.
-- `blurOnSubmit`: Boolean indicating if the keyboard should be dismissed on submit.
-- `value`: The text value of the input.
-- `onBlur`: Function called when the input loses focus.
-- `onItemActive`: Function called when the item becomes active.
-- `visible`: Boolean to control the visibility of the text editor.
-- `externalTextStyles`: Styles for the text or the view of the component.
-- `externalBorderStyles`: Styles for the border of the component.
-- `placeholder`: Placeholder text for the input.
-- `defaultTextValue`: Default value for the text input.
+| Property               | Description                                     |
+|------------------------|-------------------------------------------------|
+| `onChangeText`         | Function called when the text changes.         |
+| `blurOnSubmit`         | Boolean indicating if the keyboard should be dismissed on submit. |
+| `value`                | The text value of the input.                   |
+| `onBlur`               | Function called when the input loses focus.    |
+| `onItemActive`         | Function called when the item becomes active.  |
+| `visible`              | Boolean to control the visibility of the text editor. |
+| `externalTextStyles`   | Styles for the text or the view of the component. |
+| `externalBorderStyles` | Styles for the border of the component.        |
+| `placeholder`          | Placeholder text for the input.                |
+| `defaultTextValue`     | Default value for the text input.              |
+
 
 These props enhance the flexibility and customization of the text editor component.
 
